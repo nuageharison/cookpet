@@ -1,0 +1,27 @@
+﻿{% extends 'cookpet/base.html' %}
+{% load static %}
+{% block head %}
+<link href="{% static 'cookpet/css/index.css'%}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block content %}
+<br><br/>
+<br><br/>
+<br><br/>
+
+
+
+
+<marquee behavior="alternate" direction="up" height="500">
+    <marquee direction="right">
+
+
+   {% for item in main %}
+    <img src="{{ item.img.url }}" width="250" height="250"/>
+{% endfor %}
+</marquee>
+</marquee>
+
+
+
+{% endblock %}

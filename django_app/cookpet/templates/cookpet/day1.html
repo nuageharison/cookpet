@@ -1,0 +1,99 @@
+{% extends 'cookpet/base.html' %}
+{% load static %}
+{% block head %}
+    <link href="{% static 'cookpet/css/menu.css'%}" rel="stylesheet" type="text/css">
+{% endblock %}
+{% block content %}
+<br><br/>
+<br><br/>
+<br><br/>
+
+<div id="page">
+
+		<main>
+</div></div>
+<div style="display:inline-block;">
+
+
+<li>
+			<section id="section01">
+				<div class="scroll">
+					<h2>一日目　豚の生姜焼き</h2>
+				</div>
+
+				<div class="contents" id="div01">
+					<div class="left">
+						<image src="{% static 'cookpet/images/day1.jpeg'%}"width="360"height="500"/>
+					</div>
+					<div class="right text">
+						<h4>豚の生姜焼き 327kcal</h4>
+・豚ロース	100g</br>
+・薄力粉	少々</br>
+・玉ねぎ	60g(1/4個)</br>
+・油		少々</br>
+おろし生姜	10g(大1)</br>
+砂糖		5g(大1/2)</br>
+醤油		18g(大1)</br>
+酒		7g(大1/2)</br>
+
+玉ねぎは太めの薄切りにする。豚ロースに薄力粉をまぶしておく。</br>
+熱したフライパンに油をひき玉ねぎを炒め、しんなりしてきたら一度フライパンから取り出す。</br>
+次にの豚ロースを両面に焼き色が付くまで焼きで炒めた玉ねぎと入れる。</br>
+全体がなじんできたら火からおろす。
+
+
+<h4>味噌汁 42kcal</h4>
+・大根	25g</br>
+・里芋	25g(1/2個)</br>
+・塩	少々</br>
+・えのき　10g</br>
+・だし	150ml</br>
+・味噌	10g(大１)</br>
+
+大根はせん切りにする。里芋は皮をむき乱切りにし、塩でもんでぬめりを洗い流す。</br>
+えのきは根元を落とし、長さを半分に切る。</br>
+鍋にだし汁、里芋、大根を入れ蓋をし、煮立たせてから弱火で10分ほど煮る。</br>
+えのきを加えひと煮立ちさせた後火を止め味噌を溶き入れる。</br>
+
+
+<h4>付け合わせ 15kcal</h4>
+・キャベツ	20g</br>
+・ミニトマト	30g(2個)</br>
+・きゅうり	10g</br>
+
+キャベツはせん切り、きゅうりは斜めにスライスする。
+ミニトマトを添える。</br>
+
+<h4>白菜の胡麻和え 65kcal</h4>
+・白菜	50g</br>
+すりごま  6g(小2)</br>
+砂糖　6g(小1)</br>
+醤油	6g(小1)</br>
+だし　4g(小1)</br>
+
+白菜を1㎝幅に切り沸騰した湯に芯・葉の順で入れ、火が通ったら冷水にとって冷まし水気を切る。</br>
+上記の調味料を加えよく和える。</br>
+
+<h4>ご飯 250kcal</h4>
+
+・ご飯160g</br>
+</p>
+					</div>
+				</div>
+
+
+
+
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+</br>
+			<h4><a href="{% url 'daietto' %}">一覧に戻る</a></h4>
+		</footer>
+	</div>
+</li>
+</div>
+{% endblock %}

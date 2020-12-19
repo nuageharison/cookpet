@@ -1,0 +1,29 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>formsample</title>
+    <link href="{% static 'cookpet/css/login.css'%}" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="form">
+    <p class="form-title">Login</p>
+    <form method="post" action="{% url 'login' %}">
+            {% csrf_token %}
+        <p>IDName</p>
+        <p class="mail"><input type="text" name="id" /></p>
+        <p>Password</p>
+        <p class="pass"><input type="password" name="pass" /></p>
+        <p class="submit"><input type="submit" value="Login" /></p>
+    </form>
+    <a href="{% url 'touroku' %}">新規会員登録はこちら</a>
+</div>
+
+
+</body>
+</html>
+
+
+
+

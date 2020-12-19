@@ -1,0 +1,56 @@
+﻿{% extends 'cookpet/base.html' %}
+{% load static %}
+{% block head %}
+    <link href="{% static 'cookpet/css/menu.css'%}" rel="stylesheet" type="text/css">
+{% endblock %}
+{% block content %}
+  <div id="page">
+    <header>
+
+       
+    </header>
+ 
+ 
+      </div>
+    </div>
+<body>
+    <div class="scroll">
+</div>
+
+
+<h2>ダイエット七日間計画</h2>
+<br>
+<h2><a href="{% url 'day1' %}">1日目　豚の生姜焼き★</a></h2>
+<br>
+<br>
+<h2><a href="{% url 'day2' %}">2日目　鮭のホイル焼き★</a></h2>
+<br>
+<br>
+<h2><a href="{% url 'day3' %}">3日目　親子丼★★</a></h2>
+<br>
+<br>
+<h2><a href="{% url 'day3' %}">4日目　おろし豚しゃぶサラダ★★</a></h2>
+<br>
+<br>
+<h2><a href="{% url 'day3' %}">5日目　ヘルシードライカレー★★★</a></h2>
+<br>
+<br>
+<h2><a href="{% url 'day3' %}">6日目　お魚メイン料理★★★★</a></h2>
+<br>
+<br>
+<h2><a href="{% url 'day3' %}">7日目　豆腐ヘルシーロールキャベツ★★★★★</a></h2>
+<br>
+
+
+
+          </ul>
+        </nav>
+		<footer>
+</br>
+			<p><h4><a href="{% url 'menu' %}">一覧に戻る</a></h4>
+		</footer>
+	</div>
+
+
+
+{% endblock %}

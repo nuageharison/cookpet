@@ -1,0 +1,15 @@
+{% extends 'okada/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="swich">
+        <h1>食事を選んでね</h1>
+        <image src="{% static 'okada/images/harinezumi.png'%}" width="420" height="280" />
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" name="avatar">
+            <button type="submit">送信する</button>
+        </form>
+
+
+    </div>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'cookpet/base.html' %}
+{% load static %}
+{% block head %}
+    <link href="{% static 'cookpet/css/menu.css'%}" rel="stylesheet" type="text/css">
+{% endblock %}
+{% block content %}
+<br><br/>
+<br><br/>
+<br><br/>
+
+<div id="page">
+
+
+<div class="scroll">
+<h1>目的一覧</h1>
+
+</div>
+<br>
+<h2>目的を選んでください</h2>
+<h3><a href="{% url 'daietto' %}">・ダイエット</a>
+<br>
+<h3><a href="{% url 'daietto' %}">・筋肉増量</a>
+<br>
+<h3><a href="{% url 'daietto' %}">・簡単レシピ</a>
+<br>
+<h3><a href="{% url 'daietto' %}">・ちょっぴり一手間</a</h3>
+<br>
+<h3><a href="{% url 'daietto' %}">・健康</a>
+<br>
+<br>
+
+		<footer>
+
+</br>
+			<p><h4><a href="{% url 'index' %}">一覧に戻る</a></h4>
+
+		</footer>
+
+
+
+{% endblock %}

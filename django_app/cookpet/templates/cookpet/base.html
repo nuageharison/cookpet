@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+  <title>sample</title>
+  <link href="{% static 'cookpet/css/style.css'%}" rel="stylesheet" type="text/css">
+    {% block head %}{% endblock %}
+</head>
+<body>
+<header>
+    <h1>
+        <a href="{% url 'index' %}">Cook Pet</a>
+    </h1>
+    <nav class="pc-nav">
+        <ul>
+            <li><a href="{% url 'index' %}">HOME</a></li>
+            <li><a href="{% url 'test' %}">食事</a></li>
+            <li><a href="{% url 'menu' %}">メニュー</a></li>
+            <li><a href="{% url 'login' %}">ログオフ</a></li>
+
+        </ul>
+    </nav>
+
+</header>
+
+ {% block content %}
+        {% endblock %}
+
+
+
+</body>
+</html>

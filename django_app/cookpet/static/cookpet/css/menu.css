@@ -1,0 +1,46 @@
+﻿
+.scroll {
+	height: 87px;
+	width: 100%;
+	background-color:#FF9933 ;
+	display: table;
+}
+
+
+
+.contents {
+	height: 1500px;
+	overflow: hidden;
+}
+.left {
+	float: left;
+	height: 400px;
+	width: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.right {
+	float: right;
+	width: 50%;
+	height: 400px;
+}
+
+
+
+.contact_left_inner img {
+	float: left;
+}
+
+.contact_right {
+	float: right;
+}
+footer {
+	height: 93px;
+	background-color:#FF9900 ;
+}
+footer p {
+	margin-left: 119px;
+	font-size: 0.75rem;
+	line-height: 93px;
+}

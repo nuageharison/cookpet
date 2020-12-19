@@ -1,0 +1,39 @@
+{% extends 'okada/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="swich">
+        <br><br/>
+        <image id="mypic" src="{% static 'okada/images/pet2.png'%}" width="420" height="280" />
+        <input type="button" value="戻る" onclick="go_back()">
+        <input type="button" value="進む" onclick="go_forward()">
+
+                   <script>
+            var pics_src = new Array("{% static 'okada/images/minion.gif'%}",
+                                     "{% static 'okada/images/osara.png'%}",
+                                     "{% static 'okada/images/image1.jpg'%}");
+            var num = 0;
+
+            function go_forward(){
+                if (num == 2) {
+                    num = 0;
+                }
+                else {
+                    num ++;
+                }
+                document.getElementById("mypic").src=pics_src[num];
+            }
+
+            function go_back(){
+                if (num == 0) {
+                    num = 2;
+                }
+                else {
+                    num --;
+                }
+                document.getElementById("mypic").src=pics_src[num];
+            }
+            </script>
+    </div>
+
+{% endblock %}

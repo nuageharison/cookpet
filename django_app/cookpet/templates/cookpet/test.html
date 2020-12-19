@@ -1,0 +1,25 @@
+{% extends 'cookpet/base.html' %}
+{% load static %}
+{% block head %}
+<link href="{% static 'cookpet/css/index.css'%}" rel="stylesheet" type="text/css"
+{% endblock %}
+
+{% block content %}
+<br><br/>
+<br><br/>
+<br><br/>
+    <h2>ペットと一緒に食べる料理の写真を選ぼう！</h2>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Upload</button>
+        </form>
+
+     {% for item in pet %}
+    <tr>
+        <td><img src="{{ item.img.url }}" width="300" height="300"/></td>
+    </tr>
+    {% endfor %}
+
+
+ {% endblock %}

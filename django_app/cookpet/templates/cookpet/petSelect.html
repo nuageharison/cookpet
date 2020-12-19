@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>最初のペットを選ぼう</h1>
+<a href="{% url 'ps1' %}"><img src="{{ ps1.img.url }}" width="220" height="220"/></a>
+<a href="{% url 'ps2' %}"><img src="{{ ps2.img.url }}" width="220" height="220"/></a>
+<a href="{% url 'ps3' %}"><img src="{{ ps3.img.url }}" width="220" height="220"/></a>
+</body>
+</html>

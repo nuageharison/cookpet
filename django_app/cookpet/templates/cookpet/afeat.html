@@ -1,0 +1,96 @@
+{% extends 'cookpet/base.html' %}
+{% load static %}
+{% block head %}
+<link href="{% static 'cookpet/css/index.css'%}" rel="stylesheet" type="text/css"
+{% endblock %}
+
+{% block content %}
+    <div class="balloon3">
+
+  {{message}}
+</div>
+ <div>
+{% for item in shinka %}
+    <img src="{{ item.img.url }}" style="display: block; margin-left: 150; margin-right: auto;"class="keyframe2 animation">
+{% endfor %}
+    </div>
+
+
+
+
+
+
+<style>
+
+    .animation{
+
+    animation-timing-function: ease-in-out;
+
+    animation-iteration-count: infinite;
+
+    animation-direction: alternate;
+
+    animation-duration: 0.1s;
+    }
+
+.keyframe2{
+
+    animation-name: anim_h;
+
+}
+
+
+
+@keyframes anim_h {
+
+    0% {
+
+        transform: translate(150px, -0px);
+
+    }
+
+    100% {
+
+    transform: translate(150px, -10px);
+
+    }
+
+}
+
+
+
+
+.balloon3 {
+  position: relative;
+    top:60px;
+    left:150px;
+  display: inline-block;
+  margin: 5em 0;
+  padding: 0 5px;
+  width: 190px;
+  height:90px;
+  line-height: 90px;
+  text-align: center;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: bold;
+  background: #70a6ff;
+  border-radius: 50%;
+  box-sizing: content-box;;
+
+}
+
+.balloon3:before {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 150%;
+  margin-left: -200px;
+  border: 15px solid transparent;
+  border-top: 15px solid #70a6ff;
+  z-index: 0;
+}
+
+
+    </style>
+{% endblock %}
